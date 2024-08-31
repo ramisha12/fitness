@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/fitnessapp"
+            />
+        
+
+        <EditText
+            android:id="@+id/subscription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SUBSCRPTION IS AVAILABLE"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingStart="50sp"
+            android:drawablePadding="5sp"
+            android:drawableStart="@drawable/user_id"
+            android:background="@drawable/rectangle"
+            android:textColor="#FD0303"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_image"/>
+
+
+        <TextView
+            android:id="@+id/workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workouts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subscription"
+            />
+
+        <TextView
+            android:id="@+id/allworkouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Workouts"
+            android:textSize="20sp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/workout"
+            app:layout_constraintTop_toBottomOf="@id/subscription"
+            />
+        <HorizontalScrollView
+            android:id="@+id/horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/workout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/workout1"
+                    android:layout_width="270dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/images"
+                    android:src="@drawable/squatimages" />
+
+                <TextView
+                    android:id="@+id/work1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Squat Variations"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@id/workout1"/>
+
+                <TextView
+                    android:id="@+id/cal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8min-65min Kcal"
+                    android:textSize="18sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@id/work1"/>
+
+
+                <ImageView
+                    android:id="@+id/workout2"
+                    android:layout_width="270dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="300dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/images"
+                    android:src="@drawable/smallerwaist" />
+                <TextView
+                    android:id="@+id/work2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Execrise for smaller Waist"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_below="@id/workout2"/>
+
+                <TextView
+                    android:id="@+id/cal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12min-100min Kcal"
+                    android:textSize="18sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_below="@id/work2"/>
+
+
+                <ImageView
+                    android:id="@+id/workout3"
+                    android:layout_width="270dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="580dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/images"
+                    android:src="@drawable/hiitcardioworkout" />
+                <TextView
+                    android:id="@+id/work3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat Burning HIIT cardio Workout"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="580dp"
+                    android:layout_below="@id/workout3"/>
+
+                <TextView
+                    android:id="@+id/cal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8min-65min Kcal"
+                    android:textSize="18sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="580dp"
+                    android:layout_below="@id/work3"/>
+
+
+                <ImageView
+                    android:id="@+id/workout4"
+                    android:layout_width="270dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="860dp"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/images"
+                    android:src="@drawable/absworkout" />
+                <TextView
+                    android:id="@+id/work4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abs,Butts and Thighs"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="860dp"
+                    android:layout_below="@id/workout4"/>
+
+                <TextView
+                    android:id="@+id/cal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8min-65min Kcal"
+                    android:textSize="18sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="860dp"
+                    android:layout_below="@id/work4"/>
+
+
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/programs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programs"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontal"
+            />
+
+        <TextView
+            android:id="@+id/allprograms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Programs"
+            android:textSize="20sp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/workout"
+            app:layout_constraintTop_toBottomOf="@id/horizontal"
+            />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/programs">
+
+    <ImageView
+        android:id="@+id/program1"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smallwaistandhips"
+      />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Smaller Waist and Round hips"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/program2"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buttthighleg"
+        android:layout_below="@id/program1" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Butt,thigh and legs"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="115dp"
+        android:layout_below="@id/program1"
+        />
+
+    <ImageView
+        android:id="@+id/program3"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/squat"
+        android:layout_below="@id/program2" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Squat variations"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="110dp"
+        android:layout_below="@id/program2"
+        />
+    <ImageView
+        android:id="@+id/program4"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hiitcardioworkout"
+        android:layout_below="@id/program3" />
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Fat Burning HIIT Cardio Workout"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="100dp"
+       android:layout_below="@id/program3"
+        />
+
+    <ImageView
+        android:id="@+id/program5"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forbeginners"
+       />
+
+    <TextView
+        android:id="@+id/title5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Fat Burning HIIT Cardio Workout"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="100dp"
+        />
+    <ImageView
+        android:id="@+id/program6"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/losebellyfat"
+        android:layout_below="@id/program5" />
+
+    <TextView
+        android:id="@+id/title6"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Lose Belly Fat"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="115dp"
+        android:layout_below="@id/program5"
+        />
+
+    <ImageView
+        android:id="@+id/program7"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/planks"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/program6" />
+
+    <TextView
+        android:id="@+id/title7"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Burpees,Squats and planks"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/program6"
+        />
+
+    <ImageView
+        android:id="@+id/program8"
+        android:layout_width="185dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thighworkoutmove"
+       android:layout_below="@id/program7" />
+
+    <TextView
+        android:id="@+id/title8"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Thigh Workout Moves"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="115dp"
+        android:layout_below="@id/program7"
+        />
+
+</RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

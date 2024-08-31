@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StartProgram">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/smallwaist"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/smallwaistandhips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smallwaist">
+
+        <TextView
+            android:id="@+id/textwaist"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Smaller Waist and Round Hips"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Your Progress"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/textwaist"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/progress" />
+
+       <EditText
+           android:layout_width="180dp"
+           android:layout_height="48dp"
+           android:layout_marginTop="30dp"
+           android:text="Start day"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:textColor="@color/white"
+           android:paddingStart="20sp"
+           android:paddingEnd="20sp"
+           android:background="@drawable/bg"
+           android:backgroundTint="#5B3BB8"
+           android:drawableEnd="@drawable/forwardarrow"
+           android:drawableTint="@color/white"
+           android:layout_marginStart="200dp"
+           android:layout_below="@id/progressBar"/>
+
+    </RelativeLayout>
+
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:text="Start day"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:background="@drawable/bg"
+            android:backgroundTint="#5B3BB8"
+            android:drawableEnd="@drawable/forwardarrow"
+            android:drawableTint="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calender"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
