@@ -53,9 +53,13 @@
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="20dp"
+            android:visibility="visible"
+            android:progressTint="#6D61A0"
+            android:progress="50"
+            android:secondaryProgressTint="#5B3BB8"
             android:layout_below="@id/progress" />
 
        <EditText
